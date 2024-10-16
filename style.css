@@ -8,11 +8,12 @@ html, body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #ffffff;
-  touch-action: manipulation; /* Prevents scrolling but allows tap interactions */
+  background-color: #ffffff; /* Default background color */
+  touch-action: manipulation;
   -webkit-overflow-scrolling: none;
   overscroll-behavior: none;
 }
+
 
 canvas {
   display: block;

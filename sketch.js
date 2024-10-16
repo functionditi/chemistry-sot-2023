@@ -63,14 +63,14 @@ function preload(){
 }
 
 function setup() {
-  main=createCanvas(1080, 780);
+  main=createCanvas(1180, 820);
   var x = (windowWidth - width) / 2;
   var y = (windowHeight - height) / 2;
   main.position(x, y);
   main.mouseClicked(checkLocation);
-  lightbox=createGraphics(1080, 780);
+  lightbox=createGraphics(1180, 820);
   background(255);
-  image(home, 0, 0, 1080, 780);
+  image(home, 0, 0, 1180, 820);
 }
 
 function checkLocation(){
@@ -131,6 +131,7 @@ function draw() {
 
 function drawLightBox(index){
   clear();
+  document.body.style.backgroundColor = "rgba(0, 0, 0, 130))"; // Change background color
   image(home, 0, 0, 1080, 780);
   lightbox.clear();
   lightbox.background(0, 130);
@@ -140,6 +141,7 @@ function drawLightBox(index){
 
 function clearLightBox(){
   lightbox.clear();
+  document.body.style.backgroundColor = "#ffffff"; // Revert to original color
   clear();
   image(home, 0, 0, 1080, 780);
 }
