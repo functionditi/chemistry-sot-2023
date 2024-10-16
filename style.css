@@ -8,7 +8,10 @@ html, body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #ffffff; /* Optional: set a background color */
+  background-color: #ffffff;
+  touch-action: manipulation; /* Prevents scrolling but allows tap interactions */
+  -webkit-overflow-scrolling: none;
+  overscroll-behavior: none;
 }
 
 canvas {
@@ -17,4 +20,5 @@ canvas {
   max-height: 100vh;
   width: auto;
   height: auto;
+  position: absolute;
 }
