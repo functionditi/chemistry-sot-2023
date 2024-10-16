@@ -131,7 +131,7 @@ function draw() {
 
 function drawLightBox(index){
   clear();
-  document.body.style.backgroundColor = "rgba(0, 0, 0, 130))"; // Change background color
+  document.body.style.backgroundColor = "#7d7d7d"; // Change background color
   image(home, 0, 0, 1080, 780);
   lightbox.clear();
   lightbox.background(0, 130);
