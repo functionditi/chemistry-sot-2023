@@ -63,14 +63,14 @@ function preload(){
 }
 
 function setup() {
-  main=createCanvas(1180, 820);
+  main=createCanvas(1080, 780);
   var x = (windowWidth - width) / 2;
   var y = (windowHeight - height) / 2;
   main.position(x, y);
   main.mouseClicked(checkLocation);
-  lightbox=createGraphics(1180, 820);
+  lightbox=createGraphics(1080, 780);
   background(255);
-  image(home, 0, 0, 1180, 820);
+  image(home, 0, 0, 1080, 780);
 }
 
 function checkLocation(){
