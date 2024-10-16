@@ -131,7 +131,7 @@ function draw() {
 
 function drawLightBox(index){
   clear();
-  document.body.style.backgroundColor = "#7d7d7d"; // Change background color
+  document.body.classList.add("lightbox-active"); // Add the class
   image(home, 0, 0, 1080, 780);
   lightbox.clear();
   lightbox.background(0, 130);
@@ -141,7 +141,7 @@ function drawLightBox(index){
 
 function clearLightBox(){
   lightbox.clear();
-  document.body.style.backgroundColor = "#ffffff"; // Revert to original color
+  document.body.classList.remove("lightbox-active"); // Remove the class
   clear();
   image(home, 0, 0, 1080, 780);
 }

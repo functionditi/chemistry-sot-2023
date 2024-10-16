@@ -14,6 +14,11 @@ html, body {
   overscroll-behavior: none;
 }
 
+/* style.css */
+.lightbox-active {
+  background-color: #7d7d7d !important;
+}
+
 
 canvas {
   display: block;
